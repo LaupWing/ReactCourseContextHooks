@@ -10,16 +10,16 @@ const Favorites = props => {
   let content = <p className="placeholder">Got no favorites yet!</p>;
   if (favoriteProducts.length > 0) {
     content = (
-      <ul className="products-list">
-        {favoriteProducts.map(prod => (
-          <FavoriteItem
-            key={prod.id}
-            id={prod.id}
-            title={prod.title}
-            description={prod.description}
-          />
-        ))}
-      </ul>
+        <ul className="products-list">
+            {favoriteProducts.map(prod => (
+            <FavoriteItem
+                key={prod.id}
+                id={prod.id}
+                title={prod.title}
+                description={prod.description}
+            />
+            ))}
+        </ul>
     );
   }
   return content;
